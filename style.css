@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: gainsboro;
+    font-family: 'Courier New', Courier, monospace
+}
+
+#root {
+    width:750px;
+    margin:auto;
+    padding-top:40px;
+}
+textarea {
+    width: 100%;
+    background-color: #2B2A33;
+    color: gainsboro;
+}
+#controls {
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+}
+button {
+    background-color: #555555; /* Green */
+    border: none;
+    color: gainsboro;
+    padding: 15px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  #tagRemoverInput {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px 22px;
+    font-size: 14px;
+    margin: 10px;
+    background-color: gainsboro;
+  }
