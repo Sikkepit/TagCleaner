@@ -32,6 +32,8 @@ label {
 }
 textarea {
     width: 100%;
+    display: block;
+    resize: none;
 }
 #controls {
     margin-top:20px;
