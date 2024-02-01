@@ -1,46 +1,79 @@
 body {
-    background-color: black;
-    color: gainsboro;
-    font-family: 'Courier New', Courier, monospace
+    background-color: #e6e6e6;
+    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-weight: 300;
+    margin:0;
 }
 
-#root {
-    width:750px;
-    margin:auto;
-    padding-top:40px;
-}
-label {
-    line-height: 2rem;
-}
-textarea {
+#wrapper {
     width: 100%;
-    background-color: #2B2A33;
-    color: gainsboro;
-}
-#controls {
-    margin-top:10px;
     display: flex;
     justify-content: center;
 }
+#header {
+    display: flex;
+    align-items: center;
+}
+#root {
+    width:750px;
+    margin:auto;
+    padding-top:20px;
+}
+label {
+    font-size: 1.6rem;
+    background-color: #006131;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding:18px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border-radius: 0 20px 20px 20px;
+}
+textarea {
+    width: 100%;
+}
+#controls {
+    margin-top:20px;
+    display: flex;
+    padding-bottom:30px;
+    justify-content: end;
+    gap:15px;
+    align-items:center;
+}
 button {
-    background-color: #555555; /* Green */
-    border: none;
-    color: gainsboro;
-    padding: 15px 22px;
+    border:0;
+    font-size: 1.2rem;
+    background-color: #006131;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding:18px;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-family: 'Proxima Nova Condensed', sans-serif;
     cursor: pointer;
+    border-radius: 0 20px 20px 20px;
   }
   
   #tagRemoverInput {
-    font-family: 'Courier New', Courier, monospace;
-    padding: 15px 22px;
-    font-size: 14px;
-    margin: 10px;
-    background-color: gainsboro;
+    font-size: 1.2rem;
+    font-family: 'Proxima Nova Condensed', sans-serif;
+    padding:17px;
+    border:0;
+    border-radius: 0 20px 20px 20px;
+  }
+  i {
+    padding:10px;
+    font-size:1.5rem;
+    color: #006131;
+    margin-left:15px;
+  }
+
+  h1 {
+    display: inline-block;
+    color: #006131;
+    text-transform: uppercase;
+    font-size:1.5rem;
   }

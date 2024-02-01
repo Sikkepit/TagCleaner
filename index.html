@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tag Cleaner - Remove tags and or tag attributes</title>
 </head>
 <body>
-    <div id="root">
-        <label for="input">Insert your HTML:</label><br>
-        <textarea name="input" id="input" cols="100" rows="25"></textarea><br>
-        <div id="controls">
-            <button onclick="cleanTags()">Clean Tags</button>
-            <input type="text" id="tagRemoverInput" placeholder="Tag to remove...">
-            <button onclick="removeTags()">Remove Tags</button>
+    <script src="https://kit.fontawesome.com/f4f8cf3fb4.js" crossorigin="anonymous"></script>
+    <div id="header">
+        <i class="fa-solid fa-code"></i><h1>HTML Tag Cleaner</h1>
+    </div>
+    <div id="wrapper">
+        <div id="root">
+            <label for="input">Insert your HTML</label>
+            <textarea name="input" id="input" cols="100" rows="25"></textarea>
+            <div id="controls">
+                <button onclick="cleanTags()">Clean Tags</button>
+                <input type="text" id="tagRemoverInput" placeholder="Tag to remove...">
+                <button onclick="removeTags()">Remove Tags</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
