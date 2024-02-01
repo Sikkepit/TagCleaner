@@ -1,4 +1,4 @@
-#HTML Tag Cleaner - Remove tags and or tag attributes
+**HTML Tag Cleaner - Remove tags and or tag attributes**
 
 I created this little app for my data entry job. I use it to transfer html components from an old to a new system. 
 It strips the attributes so all the old classes, id's, name's, etc. are taken off. I also use it to remove all the span tags, strong tags, underline tags, and anchor tags.
