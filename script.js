@@ -1,4 +1,4 @@
-const outputField = document.getElementById('output');
+
 const inputField = document.getElementById('input');
 const tagRemoverInput = document.getElementById('tagRemoverInput');
 
@@ -27,8 +27,8 @@ function cleanTags() {
         restOfText = restOfText.substring(endsAt+1, text.length);
         outputText += newTag;
     }
-    let finalText = outputText+restOfText
-    outputField.innerHTML=(finalText)
+    let finalText = outputText+restOfText;
+    inputField.value=finalText;
 }
 
 function removeTags() {
@@ -46,13 +46,8 @@ function removeTags() {
 
             outputText+= restOfText.substring(0, startsAt);
             restOfText = restOfText.substring(endsAt+1, text.length);
-            console.log(restOfText)
         }
-        let finalText = outputText+restOfText
-        outputField.innerHTML=(finalText.replaceAll('</' + tag + '>', ""))
+        let finalText = outputText+restOfText;
+        inputField.value=(finalText.replaceAll('</' + tag + '>', ""));
     }
-}
-
-function outputToInput() {
-    inputField.value = outputField.value;
 }

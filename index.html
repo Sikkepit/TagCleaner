@@ -4,19 +4,16 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag Cleaner</title>
+    <title>HTML Tag Cleaner - Remove tags and or tag attributes</title>
 </head>
 <body>
     <div id="root">
-        <label for="input">Input:</label><br>
-        <textarea name="input" id="input" cols="100" rows="15"></textarea><br>
-        <label for="output">Output:</label><br>
-        <textarea name="output" id="output" cols="100" rows="15"></textarea>
+        <label for="input">Insert your HTML:</label><br>
+        <textarea name="input" id="input" cols="100" rows="25"></textarea><br>
         <div id="controls">
             <button onclick="cleanTags()">Clean Tags</button>
             <input type="text" id="tagRemoverInput" placeholder="Tag to remove...">
             <button onclick="removeTags()">Remove Tags</button>
-            <button onclick="outputToInput()">Output To Input</button>
         </div>
     </div>
     <script src="script.js"></script>
