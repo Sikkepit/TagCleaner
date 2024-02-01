@@ -38,13 +38,13 @@ function removeTags() {
         let outputText = "";
         let restOfText = inputField.value;
 
-        while(restOfText.includes("<" + tag)) {
+        while(restOfText.includes("<" + tag + ">")) {
             
-            const startsAt = restOfText.indexOf("<" + tag);
+            const startsAt = restOfText.indexOf("<" + tag  + ">");
             const endsAt = restOfText.indexOf(">", startsAt);
             
 
-            outputText+= restOfText.substring(0, restOfText.indexOf("<" + tag));
+            outputText+= restOfText.substring(0, startsAt);
             restOfText = restOfText.substring(endsAt+1, text.length);
             console.log(restOfText)
         }
