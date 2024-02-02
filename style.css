@@ -64,7 +64,7 @@ button {
     font-family: 'Proxima Nova Condensed', sans-serif;
     padding:17px;
     border:0;
-    border-radius: 0 20px 20px 20px;
+    border-radius: 20px 0 20px 20px;
   }
   i {
     padding:10px;
